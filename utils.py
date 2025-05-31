@@ -95,9 +95,6 @@ def extract_section(text: str, section_headers: List[str]) -> str:
 import json
 import csv
 import os
-
-import os
-import csv
 from typing import Dict
 
 def store_data_json(data: Dict[str, str]):
@@ -105,7 +102,7 @@ def store_data_json(data: Dict[str, str]):
     Appends extracted data to a JSON file.
     """
     try:
-        # Use absolute path for Docker
+        
         file_path = "/app/resumes_data.json"
         
         # Create empty list if file doesn't exist
